@@ -4,101 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drone Deliveries</title>
-    <link rel="stylesheet" href="/styles/chat-window.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/hero.css">
 </head>
 <body>
-
+    <header>
+        <nav>
+            <div class="logo"><a href="#">Aerodrop</a></div>
+            <ul>
+                <li><a href="#">Our mission</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <!-- Burger menu -->
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <container class="hero__container">
+            <div class="left-wrapper">
+                <h1>Food deliveries made faster</h1>
+                <p>Find a restaurant you like and order. Leave the delivery to us</p>
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Enter your address"/>
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="right-wrapper">
+                <h2>Deliveries made faster</h2>
+                <img src="/public/images/drone-with-package.png" alt="Flying drone with package">
+                <h2><a href="#">(logo)Aerodrop.com</a></h2>
+            </div>
+        </container>
+    </section>
     
-    <h1>Real Time Messaging</h1>
-    <container id="messages-window" class="messages__box-container">
-        <div class="messages__box-header">
-
-        </div>
-        <div id="messages" style="height: 400px; overflow: auto"></div>
-        <input type="text" id="messageBox" placeholder="Type your message here" style="display: block; width: 100%; margin-bottom: 10px; padding: 10px;" />
-        <button id="send" title="Send Message!" style="width: 100%; height: 30px;">Send Message</button>
-    </container>
-    <!--<h1>Drone Deliveries</h1>
-
-    <button id="disconnect" tittle="Disconnect" style="width: 40%"></button>
-
-    <div id="output"></div>
-
-    
-
-    <input type="text" id="messageInput" placeholder="Enter order"/>
-    <button id="sendButton" onclick="sendMessage()" disabled>Send</button>
-    <button onclick="onClose()">Close</button>--> 
-
-    <script> // type="module"
-        (function() {
-
-            
-
-            const sendBtn = document.querySelector('#send');
-            const messages = document.querySelector('#messages');
-            const messageBox = document.querySelector('#messageBox');
-
-            let ws;
-
-            function showMessage(message) {
-                messages.textContent += `\n\n${message}`;
-                messages.scrollDown = messages.scrollHeight;
-                messageBox.value = '';
-            }
-
-            function init() {
-                if (ws) {
-                    ws.onerror = ws.onopen = ws.close = null;
-                    ws.close();
-                }
-
-                ws = new WebSocket('ws://localhost:5500');
-                ws.onopen = () => {
-                    console.log('Connection opened!');
-                };
-                ws.onmessage = ({ data }) => showMessage(data);
-                ws.onclose = function() {
-                    ws = null;
-                };
-            }
-
-            sendBtn.onclick = function() {
-                if (!ws) {
-                    showMessage("No WebSocket connection :(");
-                    return ;
-                }
-
-                ws.send(messageBox.value);
-                showMessage(messageBox.value);
-            };
-
-            init();
-        })();
-        /*
-        const socket = new WebSocket('ws://localhost:5500');
-        const sendButton = document.getElementById("sendButton");
-
-        socket.addEventListener("open", (event) => {
-            console.log("WebSocket is opened");
-            sendButton.disabled = false;
-        });
-
-        socket.addEventListener("message", (event) => {
-            const outputDiv = document.getElementById("output");
-            outputDiv.innerHTML += `<p>${event.data}</p>`;
-        });
-
-        socket.addEventListener("close", (event) => {
-            console.log("WebSocket connection closed");
-        });   
-        
-        function sendMessage() {
-            const messageInput = document.getElementById("messageInput");
-            const message = messageInput.value;
-            socket.send(message);
-            messageInput.value = "";
-        }*/
-    </script>
 </body>
 </html>

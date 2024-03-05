@@ -1,0 +1,15 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --max-width: 920px;
+    --gray-colour: #8F8F8F;
+    --cadet-gray: #94A7B3;
+    --indigo-blue: #274060;
+    --light-white: #EDE7E3;
+    --yellow-color: #FFC370;
+}
