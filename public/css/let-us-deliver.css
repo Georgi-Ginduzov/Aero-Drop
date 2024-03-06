@@ -1,0 +1,33 @@
+.let-us-deliver{
+    background-color: var(--yellow-color);
+    padding: 3em 0;
+    text-align: center;
+}
+
+.let-us-deliver__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 43%;
+    margin: 3em auto;
+}
+
+.let-us-deliver__container h2{
+    font-size: 2.5em;
+    font-weight: 700;
+    font-style: italic;
+    word-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+.let-us-deliver__container a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(0, 0, 0, .8);
+    padding: .5em 1em;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 1em;
+    width: 20%;
+}
