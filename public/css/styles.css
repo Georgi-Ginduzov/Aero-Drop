@@ -1,9 +1,9 @@
-@import url(/public/css/navbar.css);
-@import url(/public/css/hero.css);
-@import url(/public/css/how-it-works.css);
-@import url(/public/css/faq.css);
-@import url(/public/css/let-us-deliver.css);
-@import url(/public/css/footer.css);
+@import url(/Aero-Drop/public/css/navbar.css);
+@import url(/Aero-Drop/public/css/hero.css);
+@import url(/Aero-Drop/public/css/how-it-works.css);
+@import url(/Aero-Drop/public/css/faq.css);
+@import url(/Aero-Drop/public/css/let-us-deliver.css);
+@import url(/Aero-Drop/public/css/footer.css);
 
 *{
     margin: 0;
