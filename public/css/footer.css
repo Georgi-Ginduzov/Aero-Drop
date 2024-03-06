@@ -19,13 +19,13 @@ footer .footer-container .footer-left{
 
 footer .footer-container .footer-right{
     display: flex;
-    gap: 2em;
+    gap: 5em;
 }
 
 footer .footer-container .footer-right__links{
     display: flex;
     flex-direction: column;
-    row-gap: 1em;
+    row-gap: .5em;
 }
 
 footer .footer-container .footer-right__links a{

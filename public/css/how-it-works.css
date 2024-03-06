@@ -47,6 +47,7 @@
     margin-bottom: 1.5em;
     padding: 1em 2em;
     border-radius: 30px;
+
     background-color: var(--yellow-color);
 }
 
@@ -62,6 +63,7 @@
     /*border-right: 1px solid var(--gray-colour);*/
     border-bottom: 1px solid var(--indigo-blue);
     border-radius: 0 0 50% 50%;
+    border-width: 4px;
 
     width: 33.33%;
     padding: 2em 2em;
@@ -70,8 +72,7 @@
 .how-it-works__steps .step:nth-child(2){
     border-bottom: none;
 
-    border-bottom: 0px;
-    border-top: 1px solid;
+    border-top: 4px solid;
     border-top-color: var(--yellow-color);
     border-top-style: solid;
     border-radius: 50% 50% 0 0;

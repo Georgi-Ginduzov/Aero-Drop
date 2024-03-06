@@ -21,12 +21,13 @@
     
     color: var(--light-white);
     padding: 2em;
-    width: 50%;
+    width: 45%;
 }
 
 .hero__container .right-wrapper{
     background-color: var(--indigo-blue);
     text-align: center;
+    width: 52%;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
