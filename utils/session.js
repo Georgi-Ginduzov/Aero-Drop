@@ -1,0 +1,1 @@
+// This file would handle session management. We could use a library like express-session for this.

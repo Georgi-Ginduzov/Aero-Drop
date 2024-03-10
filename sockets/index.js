@@ -1,0 +1,1 @@
+// This file would be responsible for setting up the WebSocket server or Socket.IO and handling any global events.

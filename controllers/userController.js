@@ -1,0 +1,1 @@
+//  This file would handle user registration and login. It would use the bcrypt library to hash passwords before storing them in the database, and it would create a new session when a user logs in.
